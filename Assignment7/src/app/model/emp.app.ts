@@ -1,19 +1,18 @@
 import {Component} from '@angular/core';
-import {Empdetails} from '../models/emp';
+import {Empdetails} from '../view/emp';
 @Component({
     selector:'emp-root',
-    templateUrl:'../views/emp.html'
+    templateUrl:'../view/emp.app.html',
 })
 
 export class Empcomponent
 {
-    title ='app';
     empobj:Empdetails=new Empdetails();
     show=false;
-
-    toggleshow()
+     toggleshow()
     {
         this.show=!this.show;
     }
 }
  
+

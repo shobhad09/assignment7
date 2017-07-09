@@ -1,10 +1,10 @@
-import { AngulardirectivePage } from './app.po';
+import { Angular5Page } from './app.po';
 
-describe('angulardirective App', () => {
-  let page: AngulardirectivePage;
+describe('angular5 App', () => {
+  let page: Angular5Page;
 
   beforeEach(() => {
-    page = new AngulardirectivePage();
+    page = new Angular5Page();
   });
 
   it('should display welcome message', () => {

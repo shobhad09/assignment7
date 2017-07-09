@@ -7,12 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-
-  employess= [
-    {id:1,name:'shobha'},
-    {id:1,name:'shobha'},
-    {id:1,name:'shobha'},
-    {id:1,name:'shobha'}
-
-  ]
 }

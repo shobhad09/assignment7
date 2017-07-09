@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class AngulardirectivePage {
+export class Assignment7Page {
   navigateTo() {
     return browser.get('/');
   }
