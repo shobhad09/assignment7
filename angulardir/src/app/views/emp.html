@@ -1,0 +1,16 @@
+<button (click)="toggleshow()">Title</button>
+<div *ngIf="show">
+    <input type="text" name="title" [(ngModel)]="empobj.title"/>
+    Welcome to {{empobj.title}}!!!
+    </div>
+<p>
+firstname:<input type="text" name="first" [(ngModel)]="empobj.firstname"><br>
+lastname:<input type="text" name="last" [(ngModel)]="empobj.lastname">
+</p><br>
+<p>
+firstname:<input type="text" name="first" [value]="empobj.firstname"><br>
+lastname:<input type="text" name="last" [value]="empobj.lastname">
+</p>
+
+
+

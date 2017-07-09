@@ -1,0 +1,46 @@
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div>
+                    <!--<h1 colorChanger>Add Employee</h1>-->
+                    <h1>Add Employee</h1>
+                    <form>
+                        <div class="form-group">
+                            <label for="empCode">Employee Code</label>
+                            <input type="text" class="form-control" [(ngModel)]="currentEmployee.empCode" name="empCode" id="empCode" placeholder="Employee Code">
+                        </div>
+                        <div class="form-group">
+                            <label for="empName">Employee Code</label>
+                            <input type="text" class="form-control" [(ngModel)]="currentEmployee.empName" name="empName" id="empName" placeholder="Employee Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="empSalary">Employee Salary</label>
+                            <input type="text" class="form-control" [(ngModel)]="currentEmployee.empSalary" name="empSalary" id="empSalary" placeholder="Employee Salary">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="empLevel">Employee Level</label>
+                            <select class="form-control" [(ngModel)]="currentEmployee.empLevel" name="empLevel" id="empLevel">
+                                <option value="level_1">Level 1</option>
+                                <option value="level_2">Level 2</option>
+                                <option value="level_3">Level 3</option>
+                                <option value="level_4">Level 4</option>
+                            </select>
+                        </div>
+
+                        <button type="button" (click)="AddEmployee()" class="btn btn-success">Add</button>
+                        <button type="button" (click)="ClearFields()"  colorChanger="yellow" bgColor="navy">Clear Fields</button>
+                        <button type="button" (click)="UpdateEmployee()" class="btn btn-info">Update</button>
+                    </form>
+                    <hr>
+                </div>
+
+                <grid-ui [grid-data]='employees' [grid-entityname]="'Employee'"></grid-ui>
+            </div>
+            <!-- /.col-xs-12 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>

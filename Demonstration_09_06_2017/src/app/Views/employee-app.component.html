@@ -1,0 +1,30 @@
+<!-- Two Way Binding (Model - View - Model) -->
+<h3> Two Way Binding (using ngModel) </h3>
+Employee Code : <input type="text" name="empCode" [(ngModel)]="empObj.employeeCode" /> <br/><br/>
+Employee Name : <input type="text" name="empName" [(ngModel)]="empObj.employeeName" /> <br/><br/>
+Employee Salary : <input type="text" name="empSalary" [(ngModel)]="empObj.employeeSalary" /> <br/><br/>
+
+<input type="button" (click)="AddEmployee()" value="Submit">
+
+<!-- Interpolation Binding -->
+<h3> Interpolation Binding </h3>
+<p>Employee Code : {{ empObj.employeeCode }}</p>
+<p>Employee Name : {{ empObj.employeeName }}</p>
+<p>Employee Salary : {{ empObj.employeeSalary }}</p>
+
+<table border="1" cellpadding="10" cellspacing="0">
+    <thead>
+    <tr>
+        <th>Code</th>
+        <th>Name</th>
+        <th>Salary</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of employees">
+            <td>{{ emp.employeeCode }}</td>
+            <td>{{ emp.employeeName }}</td>
+            <td>{{ emp.employeeSalary }}</td>
+        </tr>
+    </tbody>
+</table>
